@@ -30,7 +30,7 @@
             <a id="forget" href="">Forget password?</a>
             <input id="button" type="submit" name="submit" value="Log In">
         </form>
-        <p>Not registerd?<a href="registration.html">Create an account</a></p>
+        <p>Not registerd?<a href="{{route('register')}}">Create an account</a></p>
     </div>
 
 </body>

@@ -1,7 +1,7 @@
 <html>
     <head>
 
-        <title>Doctor page (View from patient) </title>
+        <title> patient </title>
    <!--
 
    Template 2098 Health
@@ -15,12 +15,13 @@
         <meta name="keywords" content="">
         <meta name="author" content="Tooplate">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        
 
         <!-- MAIN CSS -->
         <link rel="stylesheet" href="css/tooplate-style.css">
@@ -65,10 +66,13 @@
          <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
                    <li class="DoctorInfo-btn"><a href="/PatientDoctorInfo"> See doctor Info</a></li>
-                   <li class="DoctorSchedule-btn"><a href=" "> See Doctor Schedule</a></li>
-                   <li class="DoctorReview-btn"><a href="/PatientDoctorReview"> Review Doctor</a></li>
-                   <li class="DoctorContact-btn"><a href="/PatientDoctorContact "> Contact Doctor</a></li>
-              </ul>
+                   <li class="DoctorSchedule-btn"><a href="{{route('Doctor.Info')}} "> See Doctor Schedule</a></li>
+                   <li class="DoctorReview-btn"><a href="{{route('Patient.Review')}}"> Review Doctor</a></li>
+                    <li class="DoctorContact-btn"><a href="{{route('Doctor.Conatct')}} "> Contact Doctor</a></li>
+                    <li class="DoctorContact-btn"><a href="{{route('PatientDoctorPage')}} "> Get Appointment</a></li>
+                    <li class="DoctorContact-btn"><a href="{{route('Patient.Myappointment')}} "> My Appointment</a></li>
+                    <li><a href="{{route('logout')}}"><i class="flaticon-logout" aria-hidden="true" style="padding-right: 15px;"></i>logout</a></li>
+                </ul>
          </div>
 
     </div>

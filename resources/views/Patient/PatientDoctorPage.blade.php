@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<body id="top" >
 
      <!-- PRE LOADER -->
      <section class="preloader">
@@ -22,27 +22,27 @@
  <!-- Make Appoinment section -->
  <section id="appointment" data-stellar-background-ratio="3">
           <div class="container">
-
+            <span class="text-success">{{Session::get('msg')}}</span><br>
                          <!-- Register form -->
                          <div class="w-75">
-                            <form id="appointment-form" role="form" method="post" action="#">
-
+                            <form id="appointment-form" role="form" method="post" action="{{route('Patient.Appointment')}}">
+                                {{csrf_field()}}
                                 <!-- Register section title -->
-                                <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="section-title " >
                                      <h2>Fill appoinment form</h2>
                                 </div>
 
                                 <div class="wow fadeInUp" data-wow-delay="0.8s">
                                      <div class="col-md-4 col-sm-4 ">
                                           <label for="name">Name</label>
-                                          <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+                                          <input type="text" value="{{Session::get('name')}}" class="form-control" id="name" name="name" placeholder="Full Name">
                                      </div>
 
 
 
                                       <div class="col-md-4 col-sm-4">
                                           <label for="select">Select Problem type </label>
-                                          <select class="form-control">
+                                          <select class="form-control" name="problem">
                                                <option>Eye</option>
                                                <option>Ear</option>
                                                <option>Skin</option>
@@ -50,11 +50,6 @@
                                           </select>
                                      </div>
 
-
-                              <div class="col-md-4 col-sm-4">
-                                        <label for="name">Duration of Problem</label>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Since how much time yoy are facing problem">
-                                     </div>
                                      <div class="col-md-4 col-sm-4">
                                           <label for="date">Select Date</label>
                                           <input type="date" name="date" value="" class="form-control">
@@ -66,7 +61,7 @@
                                      </div>
 
 
-                              <div class="col-md-5 col-sm-5">
+                              <div class="col-md-12 col-sm-12">
 
                                           <button type="submit" class="form-control" id="cf-submit" name="submit">Create appoinment</button>
                                      </div>

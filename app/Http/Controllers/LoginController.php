@@ -17,10 +17,11 @@ class LoginController extends Controller {
 
         foreach ( $result as $res ) {
             $username = $res->username;
+            $name = $res->name;
             $type = $res->type;
             $id = $res->id;
             $active = $res->active;
-            $image = $res->image;
+
         }
 
         if ( count( $result ) > 0 ) {
@@ -46,12 +47,13 @@ class LoginController extends Controller {
                     $req->session()->put( 'type', $type );
                     $req->session()->put( 'password', $req->password );
                     $req->session()->put( 'id', $id );
-                    $req->session()->put( 'image', $image );
+
 
                     return redirect()->route( 'admin.dashboard' );
                 }
                 else if ( $type == "patient" ) {
                     $req->session()->put( 'uname', $username );
+                    $req->session()->put( 'name', $name );
                     $req->session()->put( 'type', $type );
                     $req->session()->put( 'password', $req->password );
                     $req->session()->put( 'id', $id );

@@ -25,6 +25,23 @@
     border-radius: 4px;
     display: inline-block;
   }
+  .register {
+    width: 400px;
+    height: 620px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px;
+    transform: translate(0, 150px);
+  }
+  .register #name,#pass {
+    width: 85%;
+    margin: 4px 25px;
+    padding: 10px 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+  }
   label {
     margin-left: 25px;
   }
@@ -66,4 +83,3 @@
   #fotger:hover {
     color: blue;
   }
-  

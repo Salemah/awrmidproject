@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\PatientProfileController;
+use App\Http\Controllers\Regitercontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +21,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get( '/login', [LoginController::class,'index'] )->name( 'login' );
 Route::post( '/login', "LoginController@verify" );
-Route::get( '/logout', 'LogoutController@logout' )->name( 'logout' );
+Route::get( '/register', [Regitercontroller::class,'register'] )->name( 'register' );
+Route::post( 'register/submit', [Regitercontroller::class,'registersubmit'] )->name( 'register.submit' );
+Route::get( '/logout', [LogoutController::class,'logout'] )->name( 'logout' );
 Route::get( '/home', 'homeController@index' )->name( 'home' );
 
 Route::group( ['middleware' => ['sess']], function () {
@@ -73,7 +77,7 @@ Route::group( ['middleware' => ['sess']], function () {
     //Route::get("/course-search/{keyword}",[DoctorController::class,'searchCourse']);
 
 //recepsionest route
-    Route::get( '/home', 'homeController@index' )->name( 'logout' );
+    Route::get( '/home', 'homeController@index' );
     Route::get( '/reception/dashboard/{id}', 'receptionController@index' );
     Route::get( '/reception/upp', 'receptionController@viewupp' );
     Route::post( '/reception/upp', 'receptionController@upp' );
@@ -144,10 +148,13 @@ Route::group( ['middleware' => ['sess']], function () {
     //patient route
     Route::get( '/PatientSignup', [PatientProfileController::class,'PatientSignUpIndex'] );
 
-    Route::get( '/PatientDoctor', [PatientProfileController::class,'PatientDoctorPageIndex'] );
-    Route::get( '/PatientDoctorInfo', [PatientProfileController::class,'PatientDoctorInfoIndex'] );
-    Route::get( '/PatientDoctorContact', [PatientProfileController::class,'PatientDoctorContactIndex'] );
-    Route::get( '/PatientDoctorReview',  [PatientProfileController::class,'PatientDoctorReviewIndex'] );
+    Route::get( '/PatientDoctor', [PatientProfileController::class,'PatientDoctorPageIndex'] )->name( 'PatientDoctorPage' );
+    Route::get( '/PatientDoctorInfo', [PatientProfileController::class,'PatientDoctorInfoIndex'] )->name( 'Doctor.Info' );
+    Route::get( '/PatientDoctorContact', [PatientProfileController::class,'PatientDoctorContactIndex'] )->name( 'Doctor.Conatct' );
+    Route::get( '/PatientDoctorReview',  [PatientProfileController::class,'PatientDoctorReviewIndex'] )->name( 'Patient.Review' );
+    Route::post('/Patient/Appointment',[PatientProfileController::class,'PatientAppointment'])->name('Patient.Appointment');
+    Route::get( '/Patient/Myappointment',  [PatientProfileController::class,'PatientMyappointment'] )->name( 'Patient.Myappointment' );
+    Route::get('/Appointment/Delete',[PatientProfileController::class,'AppointmentDelete'])->name('Appointment.Delete');
 
 } );
 //Route::get('/login',[ PagesController::class,'login'])->name('login');
