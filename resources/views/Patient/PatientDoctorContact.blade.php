@@ -1,3 +1,6 @@
+@extends('Patient.Patientheader')
+@section('content')
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -104,3 +107,4 @@ function closeForm() {
 
 </body>
 </html>
+@endsection

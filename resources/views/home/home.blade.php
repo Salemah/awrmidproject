@@ -34,7 +34,7 @@ http://www.tooplate.com/view/2098-health
           <div class="spinner">
 
                <span class="spinner-rotate"></span>
-               
+
           </div>
      </section>
 
@@ -47,7 +47,7 @@ http://www.tooplate.com/view/2098-health
                     <div class="col-md-4 col-sm-5">
                          <p>Welcome to a Professional Health Care</p>
                     </div>
-                         
+
                     <div class="col-md-8 col-sm-7 text-align-right">
                          <span class="phone-icon"><i class="fa fa-phone"></i> 010-060-0160</span>
                          <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
@@ -153,7 +153,7 @@ http://www.tooplate.com/view/2098-health
                               </figure>
                          </div>
                     </div>
-                    
+
                </div>
           </div>
      </section>
@@ -232,7 +232,7 @@ http://www.tooplate.com/view/2098-health
 
                          </div>
                     </div>
-                    
+
                </div>
           </div>
      </section>
@@ -380,14 +380,9 @@ http://www.tooplate.com/view/2098-health
 
      <!-- GOOGLE MAP -->
      <section id="google-map">
-     <!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-	-->
+    
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-     </section>           
+     </section>
 
 
      <!-- FOOTER -->
@@ -396,7 +391,7 @@ http://www.tooplate.com/view/2098-health
                <div class="row">
 
                     <div class="col-md-4 col-sm-4">
-                         <div class="footer-thumb"> 
+                         <div class="footer-thumb">
                               <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
                               <p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu elit consequat ultricies.</p>
 
@@ -407,8 +402,8 @@ http://www.tooplate.com/view/2098-health
                          </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-4"> 
-                         <div class="footer-thumb"> 
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb">
                               <h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
                               <div class="latest-stories">
                                    <div class="stories-image">
@@ -432,14 +427,14 @@ http://www.tooplate.com/view/2098-health
                          </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-4"> 
+                    <div class="col-md-4 col-sm-4">
                          <div class="footer-thumb">
                               <div class="opening-hours">
                                    <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
                                    <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
                                    <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
                                    <p>Sunday <span>Closed</span></p>
-                              </div> 
+                              </div>
 
                               <ul class="social-icon">
                                    <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
@@ -451,14 +446,14 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-12 col-sm-12 border-top">
                          <div class="col-md-4 col-sm-6">
-                              <div class="copyright-text"> 
-                                   <p>Copyright &copy; 2018 Your Company 
-                                   
+                              <div class="copyright-text">
+                                   <p>Copyright &copy; 2018 Your Company
+
                                    | Design: Tooplate</p>
                               </div>
                          </div>
                          <div class="col-md-6 col-sm-6">
-                              <div class="footer-link"> 
+                              <div class="footer-link">
                                    <a href="#">Laboratory Tests</a>
                                    <a href="#">Departments</a>
                                    <a href="#">Insurance Policy</a>
@@ -466,12 +461,12 @@ http://www.tooplate.com/view/2098-health
                               </div>
                          </div>
                          <div class="col-md-2 col-sm-2 text-align-center">
-                              <div class="angle-up-btn"> 
+                              <div class="angle-up-btn">
                                   <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
                               </div>
-                         </div>   
+                         </div>
                     </div>
-                    
+
                </div>
           </div>
      </footer>

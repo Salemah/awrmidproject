@@ -17,11 +17,7 @@ class PatientProfileController extends Controller
         return view('Patient.PatientDoctorPage');
 
     }
-    public function Patienthd(){
-
-        return view('Patient.Patientheader');
-
-    }
+    
 
     public function PatientDoctorInfoIndex(){
 

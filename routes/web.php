@@ -143,11 +143,11 @@ Route::group( ['middleware' => ['sess']], function () {
 
     //patient route
     Route::get( '/PatientSignup', [PatientProfileController::class,'PatientSignUpIndex'] );
-    Route::get( '/Patienthd', [PatientProfileController::class,'Patienthd'] );
-    Route::get( '/PatientDoctor', ['uses' => 'PatientProfileController@PatientDoctorPageIndex'] );
-    Route::get( '/PatientDoctorInfo', ['uses' => 'PatientProfileController@PatientDoctorInfoIndex'] );
-    Route::get( '/PatientDoctorContact', ['uses' => 'PatientProfileController@PatientDoctorContactIndex'] );
-    Route::get( '/PatientDoctorReview', ['uses' => 'PatientProfileController@PatientDoctorReviewIndex'] );
+
+    Route::get( '/PatientDoctor', [PatientProfileController::class,'PatientDoctorPageIndex'] );
+    Route::get( '/PatientDoctorInfo', [PatientProfileController::class,'PatientDoctorInfoIndex'] );
+    Route::get( '/PatientDoctorContact', [PatientProfileController::class,'PatientDoctorContactIndex'] );
+    Route::get( '/PatientDoctorReview',  [PatientProfileController::class,'PatientDoctorReviewIndex'] );
 
 } );
 //Route::get('/login',[ PagesController::class,'login'])->name('login');
